@@ -1,8 +1,12 @@
+let slider1;
+
+
 function setup(){
-    createCanvas(400,400);
+    createCanvas(windowWidth,windowHeight);
+    slider1 = createSlider (0,255);
 }
 
 function draw(){
- background(200);
- ellipse(200,200,40,40);
+ background(slider1.value());
+ 
 }
